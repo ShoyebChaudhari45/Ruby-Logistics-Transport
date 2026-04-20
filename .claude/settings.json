@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.fedex.com)",
+      "WebFetch(domain:www.delhivery.com)",
+      "WebFetch(domain:www.blackbuck.com)",
+      "WebFetch(domain:www.xpo.com)",
+      "WebFetch(domain:www.dbschenker.com)",
+      "WebFetch(domain:www.kuehne-nagel.com)",
+      "WebFetch(domain:www.jbhunt.com)",
+      "WebFetch(domain:www.werner.com)",
+      "WebSearch",
+      "Bash(python3 -c ' *)",
+      "Bash(where python *)",
+      "Bash(where py *)",
+      "Bash(C:UsersDELL6AppDataLocalProgramsPythonPython312python.exe -c ' *)",
+      "Bash(\"/c/Users/DELL6/AppData/Local/Programs/Python/Python312/python.exe\" -c \"import fitz; print\\('fitz ok'\\)\")",
+      "Bash(/c/Users/DELL6/AppData/Local/Programs/Python/Python312/python.exe -c ' *)",
+      "Bash(sed -i 's/ — we move what matters/ and we move what matters/g' index.html)",
+      "Bash(sed -i 's/ — a proudly/, a proudly/g' index.html)",
+      "Bash(sed -i 's/ — continuously enhancing/, continuously enhancing/g' index.html)",
+      "Bash(sed -i 's/ — building long-term trust/, building long-term trust/g' index.html)",
+      "Bash(sed -i 's/ — Mumbai →/ to Mumbai to/g' index.html)",
+      "Bash(sed -i 's/TN 01 AB 1234 to Mumbai to Aurangabad/TN 01 AB 1234 · Mumbai to Aurangabad/g' \"c:/Shoyeb/Transport \\(Ruby Logistics\\)/website/index.html\")",
+      "Bash(sed -i 's/MH 04 FP 0317 to Pune to Raipur/MH 04 FP 0317 · Pune to Raipur/g' \"c:/Shoyeb/Transport \\(Ruby Logistics\\)/website/index.html\")",
+      "Bash(sed -i 's/GJ 16 AY 6771 to Jaipur to Nagpur/GJ 16 AY 6771 · Jaipur to Nagpur/g' \"c:/Shoyeb/Transport \\(Ruby Logistics\\)/website/index.html\")",
+      "Bash(sed -i 's/MH 20 XX 4521 to Aurangabad to Bhubaneswar/MH 20 XX 4521 · Aurangabad to Bhubaneswar/g' \"c:/Shoyeb/Transport \\(Ruby Logistics\\)/website/index.html\")",
+      "WebFetch(domain:www.rubylogistics.in)"
+    ]
+  }
+}
