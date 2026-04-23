@@ -1,0 +1,459 @@
+/* ============================================================
+   RESPONSIVE.CSS — Ruby Logistics Transport Website
+   Full Coverage: 320px → 4K
+   ============================================================ */
+
+/* === GLOBAL BASE FIXES === */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; max-width: 100%; }
+img, video, svg, iframe { max-width: 100%; display: block; }
+
+/* ============================================================
+   4K / ULTRA-WIDE (≥1920px)
+   ============================================================ */
+@media (min-width: 1920px) {
+  .container { max-width: 1480px; }
+  .hero-title { font-size: 90px; }
+  .section-title { font-size: 48px; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 36px; }
+  .strengths-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; }
+  .fleet-gallery { gap: 28px; }
+}
+
+/* ============================================================
+   LARGE DESKTOP (1441–1919px)
+   ============================================================ */
+@media (min-width: 1441px) and (max-width: 1919px) {
+  .container { max-width: 1360px; }
+}
+
+/* ============================================================
+   MACBOOK / LAPTOP (1025–1440px)
+   ============================================================ */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero-inner { gap: 48px; }
+  .hero-title { font-size: clamp(48px, 5vw, 72px); }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .float-badge { font-size: 11px; padding: 6px 12px; }
+}
+
+/* ============================================================
+   TABLETS LANDSCAPE / SMALL LAPTOP (1025–1100px)
+   ============================================================ */
+@media (max-width: 1100px) {
+  .hero-inner { gap: 32px; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-card.featured-team { grid-column: span 2; }
+  .strengths-grid { grid-template-columns: repeat(2, 1fr); }
+  .turnover-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .float-badge { font-size: 11px; padding: 5px 10px; }
+  /* Mobile menu: hamburger visible, desktop quote hidden */
+  .nav-phone { font-size: 13px; }
+}
+
+/* ============================================================
+   TABLET PORTRAIT (769–900px)
+   ============================================================ */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .hero-visual { display: none; }
+
+  .about-grid-new { grid-template-columns: 1fr; gap: 40px; }
+  .coverage-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .industries-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .fleet-gallery { grid-template-columns: 1fr 1fr; }
+  .tracking-body { grid-template-columns: 1fr; }
+  .track-map {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .testimonials-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
+
+/* ============================================================
+   MOBILE (≤768px) — Hamburger breakpoint
+   ============================================================ */
+@media (max-width: 768px) {
+  .section { padding: 56px 0; }
+  .container { padding: 0 20px; }
+
+  /* --- Navbar --- */
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .btn-quote-nav { display: none; }
+  .nav-phone { display: none; }
+  .nav-container { padding: 0 16px; height: 60px; }
+  .nav-logo-img-real { height: 38px; }
+
+  /* Mobile menu touch targets */
+  .mob-link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .btn-quote-mob {
+    min-height: 48px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  /* --- Hero --- */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding-top: 90px;
+    padding-bottom: 48px;
+    text-align: center;
+    min-height: auto;
+  }
+  .hero-visual { display: none; }
+  .hero-badge { font-size: 12px; padding: 7px 16px; margin-bottom: 20px; }
+  .hero-title { font-size: clamp(34px, 11vw, 56px); margin-bottom: 12px; }
+  .hero-sub { font-size: 15px; max-width: 100%; margin: 0 auto 24px; }
+  .hero-ctas { justify-content: center; gap: 12px; margin-bottom: 28px; }
+  .btn-primary, .btn-secondary { padding: 12px 22px; font-size: 14px; min-height: 44px; }
+  .scroll-indicator { display: none; }
+
+  /* Stats — 3-col compact */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .stat-divider { display: none; }
+  .stat-card { padding: 14px 6px; background: rgba(255,255,255,0.04); }
+  .stat-number { font-size: 20px; }
+  .stat-label { font-size: 9px; }
+
+  /* --- Section headers --- */
+  .section-title { font-size: 26px; }
+  .section-sub { font-size: 15px; }
+  .section-header { margin-bottom: 40px; }
+
+  /* --- About --- */
+  .about-grid-new { grid-template-columns: 1fr; gap: 32px; }
+  .about-timeline { padding-left: 16px; }
+  .about-cities-strip { gap: 8px; flex-wrap: wrap; }
+  .about-stat-card { min-width: 110px; padding: 14px 10px; }
+  .about-stat-card.asc-tl { top: 12px; left: 12px; }
+  .about-stat-card.asc-tr { top: 12px; right: 12px; }
+  .about-stat-card.asc-bl { bottom: 48px; left: 12px; }
+  .asc-val { font-size: 22px; }
+  .asc-label { font-size: 10px; }
+  .about-entities { flex-wrap: wrap; gap: 8px; }
+  .entity-badge { font-size: 12px; padding: 7px 14px; }
+
+  /* --- Services --- */
+  .services-grid { grid-template-columns: 1fr; gap: 16px; }
+  .service-card { padding: 24px 20px; }
+
+  /* --- Strengths --- */
+  .strengths-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .strength-item { padding: 20px 16px; }
+  .strength-num { font-size: 48px; }
+
+  /* --- Industries --- */
+  .industries-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .industry-card { height: 160px; }
+
+  /* --- Fleet --- */
+  .fleet-gallery { grid-template-columns: 1fr; }
+  .fleet-features { flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .fleet-feature { min-width: calc(33% - 8px); }
+  .fleet-stats { gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+  /* --- Coverage --- */
+  .coverage-grid { grid-template-columns: 1fr; gap: 32px; }
+  .coverage-states { grid-template-columns: repeat(2, 1fr); }
+  .hub-card { padding: 16px; }
+
+  /* --- Clients --- */
+  .client-logo-card { width: 150px; padding: 18px 12px; }
+  .client-icon { width: 50px; height: 50px; font-size: 20px; }
+
+  /* --- Team --- */
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .team-card.featured-team { grid-column: span 2; }
+
+  /* --- Turnover stats --- */
+  .turnover-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .turnover-card { padding: 24px 16px; }
+
+  /* --- Tracking --- */
+  .tracking-body { grid-template-columns: 1fr; }
+  .track-map {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    min-height: 220px;
+  }
+  .truck-marker { width: 24px; height: 24px; font-size: 10px; }
+
+  /* --- Contact --- */
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .form-row { grid-template-columns: 1fr; }
+  .map-embed iframe { height: 200px; }
+  .contact-form-box { padding: 24px 20px; }
+
+  /* --- Modal --- */
+  .modal-box { padding: 24px 18px; margin: 16px; width: calc(100% - 32px); max-height: 90vh; overflow-y: auto; }
+  .modal-overlay { padding: 12px; }
+
+  /* --- Testimonials --- */
+  .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+  .testimonial-card { padding: 20px; }
+
+  /* --- Footer --- */
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-logo-img-real { height: 44px; }
+  .hubs-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .footer-bottom .container { flex-direction: column; gap: 6px; text-align: center; }
+  .footer-social a { width: 42px; height: 42px; font-size: 16px; }
+
+  /* --- WhatsApp & Back to Top --- */
+  .whatsapp-btn { bottom: 72px; right: 16px; width: 44px; height: 44px; }
+  .back-to-top { right: 16px; bottom: 20px; width: 42px; height: 42px; }
+}
+
+/* ============================================================
+   LARGE PHONES (481–600px)
+   ============================================================ */
+@media (max-width: 600px) {
+  .hero-title { font-size: clamp(30px, 10vw, 44px); }
+  .hero-ctas { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; max-width: 320px; justify-content: center; }
+
+  .about-img-stack { margin-bottom: 80px; }
+  .about-stat-card { font-size: 11px; }
+
+  .industries-grid { gap: 10px; }
+  .industry-card { height: 150px; }
+  .industry-clients { display: none; }
+
+  .fleet-feature { min-width: calc(50% - 8px); text-align: center; }
+
+  .coverage-states { grid-template-columns: 1fr 1fr; }
+
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-card.featured-team { grid-column: span 2; }
+
+  .hubs-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   STANDARD PHONES (361–480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .section { padding: 48px 0; }
+  .container { padding: 0 16px; }
+
+  /* Hero */
+  .hero-title { font-size: clamp(30px, 12vw, 44px); }
+  .hero-badge { font-size: 11px; }
+  .hero-sub { font-size: 14px; }
+
+  /* Stats */
+  .hero-stats { grid-template-columns: repeat(3, 1fr); }
+  .stat-number { font-size: 18px; }
+  .stat-label { font-size: 8px; }
+
+  /* Sections */
+  .section-title { font-size: 22px; line-height: 1.3; }
+  .section-sub { font-size: 14px; }
+
+  /* About */
+  .atl-year { font-size: 16px; min-width: 44px; }
+  .atl-text strong { font-size: 14px; }
+  .atl-text p { font-size: 13px; }
+  .about-vision { flex-direction: column; gap: 10px; padding: 16px; }
+  .entity-badge { font-size: 11px; padding: 6px 12px; }
+
+  /* Strengths — single column */
+  .strengths-grid { grid-template-columns: 1fr; }
+  .strength-item { padding: 18px 14px; }
+  .strength-num { font-size: 40px; }
+
+  /* Industries — single column */
+  .industries-grid { grid-template-columns: 1fr; }
+  .industry-card { height: 140px; }
+  .industry-h3 { font-size: 16px; }
+
+  /* Fleet */
+  .fleet-feature { min-width: calc(50% - 8px); font-size: 12px; }
+  .fleet-card-info h4 { font-size: 14px; }
+  .fleet-card-info p { font-size: 12px; }
+
+  /* Coverage */
+  .coverage-states { grid-template-columns: 1fr 1fr; }
+  .state-item { font-size: 12px; padding: 8px 10px; }
+
+  /* Team — single column */
+  .team-grid { grid-template-columns: 1fr; }
+  .team-card.featured-team { grid-column: span 1; }
+  .team-card { padding: 20px 16px; }
+
+  /* Turnover — single column */
+  .turnover-grid { grid-template-columns: 1fr; }
+  .turnover-card { padding: 20px; }
+  .t-value { font-size: 32px; }
+
+  /* Testimonials */
+  .testimonials-grid { grid-template-columns: 1fr; }
+
+  /* Clients */
+  .client-logo-card { width: 130px; padding: 14px 10px; }
+  .client-icon { width: 44px; height: 44px; font-size: 18px; }
+
+  /* Modal */
+  .modal-box { padding: 20px 14px; }
+  .modal-header h3 { font-size: 18px; }
+  .modal-header p { font-size: 13px; }
+  .btn-submit { min-height: 48px; font-size: 14px; }
+
+  /* Footer */
+  .hubs-grid { grid-template-columns: 1fr; }
+  .footer-social { gap: 8px; }
+  .footer-entities span { font-size: 10px; }
+
+  /* Preloader */
+  .pre-logo { width: 180px; }
+  .pre-truck { width: 150px; }
+  .pre-tagline { font-size: 13px; }
+
+  /* Buttons — full touch targets */
+  .btn-primary, .btn-secondary { min-height: 48px; font-size: 14px; }
+}
+
+/* ============================================================
+   SMALL PHONES (≤360px) — iPhone SE, Galaxy Fold
+   ============================================================ */
+@media (max-width: 360px) {
+  html { font-size: 14px; }
+  .container { padding: 0 12px; }
+  .nav-container { padding: 0 12px; }
+  .nav-logo-img-real { height: 32px; }
+
+  .hero-title { font-size: 28px; }
+  .hero-sub { font-size: 13px; }
+  .hero-badge { font-size: 10px; padding: 6px 12px; }
+
+  .section-title { font-size: 20px; }
+  .section-tag { font-size: 10px; }
+
+  .stat-number { font-size: 16px; }
+  .stat-label { font-size: 7px; }
+
+  .service-card h3 { font-size: 15px; }
+  .service-card p { font-size: 12px; }
+
+  .strength-item h4 { font-size: 13px; }
+  .strength-item p { font-size: 12px; }
+
+  .t-value { font-size: 28px; }
+  .t-label { font-size: 11px; }
+
+  .modal-box { padding: 16px 12px; }
+
+  .pre-logo { width: 140px; }
+  .pre-truck { width: 120px; }
+
+  .whatsapp-btn { right: 12px; }
+  .back-to-top { right: 12px; }
+}
+
+/* ============================================================
+   LANDSCAPE PHONES (height ≤ 500px)
+   ============================================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-inner {
+    padding-top: 70px;
+    padding-bottom: 24px;
+    min-height: auto;
+  }
+  .hero-title { font-size: 28px; margin-bottom: 8px; }
+  .hero-sub { font-size: 13px; margin-bottom: 14px; }
+  .hero-stats { margin-top: 16px; }
+  .scroll-indicator { display: none; }
+  .section { padding: 36px 0; }
+  .modal-box { max-height: 85vh; overflow-y: auto; }
+}
+
+/* ============================================================
+   TOUCH DEVICE ENHANCEMENTS
+   ============================================================ */
+@media (hover: none) and (pointer: coarse) {
+  /* 44px minimum touch targets */
+  .nav-link { min-height: 44px; display: flex; align-items: center; }
+  .mob-link { min-height: 48px; }
+  .btn-primary,
+  .btn-secondary,
+  .btn-submit,
+  .btn-quote-mob { min-height: 48px; }
+  .service-link { min-height: 44px; display: inline-flex; align-items: center; }
+  .footer-social a { width: 44px; height: 44px; }
+  .whatsapp-btn { width: 48px; height: 48px; }
+  .back-to-top { width: 48px; height: 48px; }
+  .hamburger { min-width: 44px; min-height: 44px; }
+  .modal-close { min-width: 44px; min-height: 44px; }
+
+  /* Disable hover-only transforms on touch */
+  .service-card:hover { transform: none; }
+  .strength-item:hover { transform: none; }
+  .industry-card:hover .industry-content { transform: none; }
+  .fleet-card:hover { transform: none; }
+  .team-card:hover { transform: none; }
+  .client-logo-card:hover { transform: none; }
+}
+
+/* ============================================================
+   HIGH-DPI / RETINA
+   ============================================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .stat-divider { width: 0.5px; }
+}
+
+/* ============================================================
+   PRINT
+   ============================================================ */
+@media print {
+  #navbar, #preloader, .mobile-menu, .whatsapp-btn,
+  .back-to-top, .modal-overlay, .scroll-indicator,
+  .hero-visual, .hero-particles { display: none !important; }
+  .hero { min-height: auto; padding: 24px 0; }
+  .section { padding: 24px 0; }
+  body { font-size: 12pt; color: #000; background: white; }
+  a { text-decoration: underline; color: #000; }
+  .hero-title, .section-title { color: #000 !important; }
+}
+
+/* ============================================================
+   REDUCED MOTION (Accessibility)
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-aos] { opacity: 1 !important; transform: none !important; }
+  .pre-truck { animation: none !important; }
+  .road-dash-group { animation: none !important; }
+  .smoke { animation: none !important; }
+  .clients-track { animation: none !important; }
+}
