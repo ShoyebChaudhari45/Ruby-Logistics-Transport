@@ -68,7 +68,7 @@ img, video, svg, iframe { max-width: 100%; display: block; }
     padding-top: 100px;
     padding-bottom: 40px;
   }
-  .hero-visual { display: none; }
+  .hero-visual { margin-top: 40px; }
 
   .about-grid-new { grid-template-columns: 1fr; gap: 40px; }
   .coverage-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -122,7 +122,7 @@ img, video, svg, iframe { max-width: 100%; display: block; }
     text-align: center;
     min-height: auto;
   }
-  .hero-visual { display: none; }
+  .hero-visual { margin-top: 32px; transform: scale(0.9); }
   .hero-badge { font-size: 12px; padding: 7px 16px; margin-bottom: 20px; }
   .hero-title { font-size: clamp(34px, 11vw, 56px); margin-bottom: 12px; }
   .hero-sub { font-size: 15px; max-width: 100%; margin: 0 auto 24px; }
