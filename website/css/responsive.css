@@ -5,7 +5,7 @@
 
 /* === GLOBAL BASE FIXES === */
 *, *::before, *::after { box-sizing: border-box; }
-html, body { overflow-x: hidden; max-width: 100%; }
+html, body { overflow-x: hidden; width: 100%; max-width: 100%; }
 img, video, svg, iframe { max-width: 100%; display: block; }
 
 /* ============================================================
@@ -50,7 +50,12 @@ img, video, svg, iframe { max-width: 100%; display: block; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .float-badge { font-size: 11px; padding: 5px 10px; }
   /* Mobile menu: hamburger visible, desktop quote hidden */
-  .nav-phone { font-size: 13px; }
+  .nav-links { display: none; }
+  .btn-quote-nav { display: none; }
+  .nav-phone { display: none; }
+  .hamburger { display: flex; }
+  .nav-container { padding: 0 20px; height: 60px; justify-content: space-between; }
+  .nav-logo-img-real { height: 42px; }
 }
 
 /* ============================================================
@@ -90,7 +95,7 @@ img, video, svg, iframe { max-width: 100%; display: block; }
   .hamburger { display: flex; }
   .btn-quote-nav { display: none; }
   .nav-phone { display: none; }
-  .nav-container { padding: 0 16px; height: 60px; }
+  .nav-container { padding: 0 16px; height: 60px; justify-content: space-between; }
   .nav-logo-img-real { height: 38px; }
 
   /* Mobile menu touch targets */
@@ -181,7 +186,7 @@ img, video, svg, iframe { max-width: 100%; display: block; }
 
   /* --- Coverage --- */
   .coverage-grid { grid-template-columns: 1fr; gap: 32px; }
-  .coverage-states { grid-template-columns: repeat(2, 1fr); }
+  .india-coverage { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .hub-card { padding: 16px; }
 
   /* --- Clients --- */
@@ -248,7 +253,7 @@ img, video, svg, iframe { max-width: 100%; display: block; }
 
   .fleet-feature { min-width: calc(50% - 8px); text-align: center; }
 
-  .coverage-states { grid-template-columns: 1fr 1fr; }
+  .india-coverage { grid-template-columns: 1fr 1fr; }
 
   .team-grid { grid-template-columns: 1fr 1fr; }
   .team-card.featured-team { grid-column: span 2; }
@@ -300,8 +305,8 @@ img, video, svg, iframe { max-width: 100%; display: block; }
   .fleet-card-info p { font-size: 12px; }
 
   /* Coverage */
-  .coverage-states { grid-template-columns: 1fr 1fr; }
-  .state-item { font-size: 12px; padding: 8px 10px; }
+  .india-coverage { grid-template-columns: 1fr; }
+  .coverage-state { font-size: 12px; padding: 8px 10px; }
 
   /* Team — single column */
   .team-grid { grid-template-columns: 1fr; }
