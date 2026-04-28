@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Services offered by Ruby Logistics — freight forwarding, C&F agency, cement distribution, beer industry logistics, supply chain management, and real estate." />
+  <title>Services | Ruby Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="services">
+
+  <div id="quoteModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Request a Quote">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-file-invoice"></i></div>
+        <h3>Request a Quote</h3>
+        <p>Get a customized logistics solution in 24 hours</p>
+      </div>
+      <form class="modal-form" id="quoteForm">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your Name" required /></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required /></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+        <div class="form-group">
+          <label>Service Required *</label>
+          <select required>
+            <option value="">Select Service</option>
+            <option>Freight Forwarding &amp; Transportation</option>
+            <option>Clearing &amp; Forwarding (C&amp;F)</option>
+            <option>Cement Distribution</option>
+            <option>Beer Industry Logistics</option>
+            <option>Supply Chain Management</option>
+            <option>Real Estate Development</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Your Requirement</label><textarea placeholder="Describe your logistics requirement..." rows="3"></textarea></div>
+        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <nav id="navbar" class="navbar-solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo_0.jpeg" alt="Ruby Logistics" class="nav-logo-img-real"/></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="nav-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="nav-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="nav-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="nav-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-quote-nav" id="openModalNav">Get Quote</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul>
+        <li><a href="index.html" class="mob-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="mob-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="mob-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="mob-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="mob-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="mob-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="mob-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="mob-link" data-page="contact">Contact</a></li>
+      </ul>
+      <button class="btn-quote-mob" id="openModalMob">Get a Quote</button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="page-crumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Services</p>
+      <h1>Our <span class="highlight-orange">Services</span></h1>
+      <p>Comprehensive logistics solutions tailored to your industry needs.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">End-to-End <span class="highlight-orange">Logistics Solutions</span></h2>
+        <p class="section-sub">Six core service lines, each backed by decades of operational expertise</p>
+      </div>
+
+      <div class="services-grid">
+        <div id="freight" class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-shipping-fast service-icon"></i>
+          </div>
+          <h3>Freight Forwarding &amp; Transportation</h3>
+          <p>End-to-end freight management with our robust fleet. Bulk consignments, high-volume distribution, and time-sensitive cargo handled with precision.</p>
+          <button type="button" class="service-link service-cta" data-service="Freight Forwarding &amp; Transportation">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="cf" class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-file-contract service-icon"></i>
+          </div>
+          <h3>Clearing &amp; Forwarding (C&amp;F)</h3>
+          <p>Complete C&amp;F agency operations ensuring smooth cargo movement with full regulatory compliance and documentation support.</p>
+          <button type="button" class="service-link service-cta" data-service="Clearing &amp; Forwarding (C&amp;F)">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="cement" class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-badge">Top Service</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-industry service-icon"></i>
+          </div>
+          <h3>Cement Distribution</h3>
+          <p>Specialized cement logistics with capacity of <strong>50,000 MT per month</strong>. Serving Adani, Orient, Wonder, and Chettinad Cements for 25+ years.</p>
+          <button type="button" class="service-link service-cta" data-service="Cement Distribution">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="beer" class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-beer service-icon"></i>
+          </div>
+          <h3>Beer Industry Logistics</h3>
+          <p>Specialized logistics for the beer &amp; beverage sector. Lifting capacity of <strong>10 Lac cases per month</strong> for ABInBev, United Breweries, and Carlsberg.</p>
+          <button type="button" class="service-link service-cta" data-service="Beer Industry Logistics">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="scm" class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-network-wired service-icon"></i>
+          </div>
+          <h3>Supply Chain Management</h3>
+          <p>Integrated supply chain solutions combining route optimization, real-time tracking, and operational excellence across all touchpoints.</p>
+          <button type="button" class="service-link service-cta" data-service="Supply Chain Management">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="realestate" class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <i class="fas fa-city service-icon"></i>
+          </div>
+          <h3>Real Estate Development</h3>
+          <p>Strategic real estate and land development through Ruby Builders &amp; Developers, delivering quality projects across the Marathwada region.</p>
+          <button type="button" class="service-link service-cta" data-service="Real Estate Development">Learn More <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Detail Modal -->
+  <div id="serviceModal" class="modal-overlay service-detail-modal" role="dialog" aria-modal="true" aria-label="Service Details">
+    <div class="modal-box">
+      <button class="modal-close" id="closeServiceModal" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-info-circle"></i></div>
+        <h3 id="serviceModalTitle">Service Details</h3>
+        <p id="serviceModalSub">Learn what's included &amp; how we deliver</p>
+      </div>
+      <div class="service-modal-body" id="serviceModalBody">
+        <!-- Content injected by JS -->
+      </div>
+      <div class="service-modal-actions">
+        <button class="btn-primary" id="serviceModalQuote"><i class="fas fa-file-alt"></i> Get a Quote</button>
+        <a href="contact.html" class="btn-secondary"><i class="fas fa-phone-alt"></i> Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== INDUSTRIES ==================== -->
+  <section class="section industries-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag">Industries We Serve</div>
+        <h2 class="section-title">Sector-Specific <span class="highlight-orange">Expertise</span></h2>
+        <p class="section-sub">Deep domain knowledge in the industries we serve</p>
+      </div>
+
+      <div class="industries-grid">
+        <div class="industry-card" data-aos="flip-left" data-aos-delay="0">
+          <div class="industry-bg industry-cement"></div>
+          <div class="industry-content">
+            <div class="industry-icon"><i class="fas fa-industry"></i></div>
+            <h3>Cement Industry</h3>
+            <p>50,000 MT per month capacity serving top cement majors for 25+ years</p>
+            <ul class="industry-clients">
+              <li>Adani Cement (25 yrs)</li>
+              <li>Orient Cement (25 yrs)</li>
+              <li>Wonder Cement (2 yrs)</li>
+              <li>Chettinad Cements (5 yrs)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="industry-card" data-aos="flip-left" data-aos-delay="150">
+          <div class="industry-bg industry-beer"></div>
+          <div class="industry-content">
+            <div class="industry-icon"><i class="fas fa-beer"></i></div>
+            <h3>Beer &amp; Beverage</h3>
+            <p>10 Lac cases/month capacity for India's leading breweries</p>
+            <ul class="industry-clients">
+              <li>ABInBev India (20 yrs)</li>
+              <li>United Breweries (20 yrs)</li>
+              <li>Carlsberg India (15 yrs)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="industry-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="industry-bg industry-drinks"></div>
+          <div class="industry-content">
+            <div class="industry-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h3>Cold Drinks Distribution</h3>
+            <p>5 Lac cases/month capacity for cold drink distribution</p>
+            <ul class="industry-clients">
+              <li>Hindustan Coca-Cola (5 yrs)</li>
+              <li>Pan India Distribution</li>
+              <li>Last-mile delivery expertise</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-strip-section">
+    <div class="container">
+      <div class="cta-strip" data-aos="zoom-in">
+        <div>
+          <h2>Need a custom logistics solution?</h2>
+          <p>Talk to our team and get a tailored proposal within 24 hours.</p>
+        </div>
+        <div class="cta-strip-actions">
+          <button class="btn-primary" id="openModalCta"><i class="fas fa-file-alt"></i> Get Quote</button>
+          <a href="contact.html" class="btn-secondary"><i class="fas fa-phone-alt"></i> Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo"><img src="images/logo_0.jpeg" alt="Ruby Logistics" class="footer-logo-img-real"/></div>
+            <p class="footer-tagline">"We Deliver Faith."</p>
+            <p class="footer-desc">Trusted integrated logistics &amp; supply chain partner since 1984. Serving India's top corporates with reliability, ethics, and excellence.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://wa.me/919011007264" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="fleet.html">Our Fleet</a></li>
+              <li><a href="coverage.html">Coverage</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="team.html">Leadership</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#freight">Freight Forwarding</a></li>
+              <li><a href="services.html#cf">C&amp;F Agency</a></li>
+              <li><a href="services.html#cement">Cement Distribution</a></li>
+              <li><a href="services.html#beer">Beer Industry Logistics</a></li>
+              <li><a href="services.html#scm">Supply Chain Mgmt</a></li>
+              <li><a href="services.html#realestate">Real Estate</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Beed By Pass Road, Aurangabad, Maharashtra 431007</p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:9011007264">9011007264</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:rubylogisticsabad@gmail.com">rubylogisticsabad@gmail.com</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://ruby-logistics-transport-prnt.vercel.app/" target="_blank" rel="noopener">rubylogistics</a></p>
+            <div class="footer-entities">
+              <span>Ruby Traders</span>
+              <span>Expert Logistic Services</span>
+              <span>Ruby Builders &amp; Developers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2026 Ruby Logistics. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Excellence</p></div></div>
+  </footer>
+
+  <a href="https://wa.me/919011007264?text=Hello%20Ruby%20Logistics%2C%20I%20need%20logistics%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us!</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

@@ -13,31 +13,22 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
-<body>
+<body data-page="home">
 
   <!-- Preloader -->
   <div id="preloader">
     <div class="preloader-inner">
-
-      <!-- Logo -->
       <div class="pre-logo-wrap">
         <img src="images/logo_0.jpeg" alt="Ruby Logistics" class="pre-logo"/>
       </div>
-
-      <!-- Tagline -->
       <p class="pre-tagline">— We Deliver Faith —</p>
-
-      <!-- Road + Truck animation -->
       <div class="pre-road-wrap">
-        <!-- Road -->
         <div class="pre-road">
           <div class="pre-dashes">
             <span></span><span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span><span></span>
           </div>
         </div>
-
-        <!-- Truck SVG driving across -->
         <svg class="pre-truck" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="pt" x1="0" y1="0" x2="0" y2="1">
@@ -49,25 +40,20 @@
               <stop offset="100%" stop-color="#0d4a8a"/>
             </linearGradient>
           </defs>
-          <!-- Trailer -->
           <rect x="0" y="8" width="138" height="38" rx="3" fill="url(#pt)"/>
           <rect x="0" y="38" width="138" height="5" rx="0" fill="#FF6B35"/>
           <rect x="2" y="8" width="134" height="4" rx="2" fill="rgba(255,255,255,0.06)"/>
           <text x="69" y="29" font-family="Arial,sans-serif" font-size="8" font-weight="800" fill="rgba(255,255,255,0.85)" text-anchor="middle" letter-spacing="1.5">RUBY LOGISTICS</text>
           <text x="69" y="39" font-family="Arial,sans-serif" font-size="5" fill="rgba(255,107,53,0.9)" text-anchor="middle" letter-spacing="1">WE DELIVER FAITH</text>
-          <!-- Cab -->
           <rect x="140" y="2" width="72" height="44" rx="5" fill="url(#pc)"/>
           <rect x="145" y="6" width="60" height="30" rx="3" fill="rgba(100,181,246,0.25)"/>
           <rect x="147" y="8" width="25" height="3" rx="1" fill="rgba(255,255,255,0.15)"/>
           <rect x="140" y="40" width="72" height="6" rx="0" fill="#FF6B35"/>
-          <!-- Exhaust -->
           <rect x="198" y="0" width="5" height="10" rx="2" fill="#444"/>
           <circle class="ps1" cx="200" cy="0" r="3" fill="rgba(200,200,200,0.2)"/>
           <circle class="ps2" cx="201" cy="-5" r="4" fill="rgba(180,180,180,0.15)"/>
-          <!-- Headlight -->
           <ellipse cx="211" cy="30" rx="6" ry="5" fill="#fff8e1" opacity="0.9"/>
           <ellipse cx="211" cy="30" rx="4" ry="3" fill="#FFE57F"/>
-          <!-- Wheels -->
           <circle cx="24"  cy="48" r="10" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
           <circle cx="24"  cy="48" r="5"  fill="#2e2e2e"/><circle cx="24"  cy="48" r="2" fill="#555"/>
           <circle cx="58"  cy="48" r="10" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
@@ -76,15 +62,11 @@
           <circle cx="160" cy="48" r="5"  fill="#2e2e2e"/><circle cx="160" cy="48" r="2" fill="#555"/>
           <circle cx="196" cy="48" r="10" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
           <circle cx="196" cy="48" r="5"  fill="#2e2e2e"/><circle cx="196" cy="48" r="2" fill="#555"/>
-          <!-- Shadow -->
           <ellipse cx="110" cy="59" rx="105" ry="4" fill="rgba(0,0,0,0.3)"/>
         </svg>
       </div>
-
-      <!-- Progress bar -->
       <div class="pre-bar"><div class="pre-fill"></div></div>
       <p class="pre-percent">Loading…</p>
-
     </div>
   </div>
 
@@ -116,8 +98,8 @@
           <label>Service Required *</label>
           <select required>
             <option value="">Select Service</option>
-            <option>Freight Forwarding & Transportation</option>
-            <option>Clearing & Forwarding (C&F)</option>
+            <option>Freight Forwarding &amp; Transportation</option>
+            <option>Clearing &amp; Forwarding (C&amp;F)</option>
             <option>Cement Distribution</option>
             <option>Beer Industry Logistics</option>
             <option>Supply Chain Management</option>
@@ -138,22 +120,19 @@
   <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <img src="images/logo_0.jpeg" alt="Ruby Logistics" class="nav-logo-img-real"/>
       </a>
-
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#strengths" class="nav-link">Why Us</a></li>
-        <li><a href="#fleet" class="nav-link">Fleet</a></li>
-        <li><a href="#coverage" class="nav-link">Coverage</a></li>
-        <li><a href="#clients" class="nav-link">Clients</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="nav-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="nav-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="nav-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="nav-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
       </ul>
-
       <div class="nav-actions">
         <button class="btn-quote-nav" id="openModalNav">Get Quote</button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -167,15 +146,14 @@
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-inner">
       <ul>
-        <li><a href="#home" class="mob-link">Home</a></li>
-        <li><a href="#about" class="mob-link">About</a></li>
-        <li><a href="#services" class="mob-link">Services</a></li>
-        <li><a href="#strengths" class="mob-link">Why Us</a></li>
-        <li><a href="#fleet" class="mob-link">Fleet</a></li>
-        <li><a href="#coverage" class="mob-link">Coverage</a></li>
-        <li><a href="#clients" class="mob-link">Clients</a></li>
-        <li><a href="#team" class="mob-link">Team</a></li>
-        <li><a href="#contact" class="mob-link">Contact</a></li>
+        <li><a href="index.html" class="mob-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="mob-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="mob-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="mob-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="mob-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="mob-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="mob-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="mob-link" data-page="contact">Contact</a></li>
       </ul>
       <button class="btn-quote-mob" id="openModalMob">Get a Quote</button>
     </div>
@@ -189,7 +167,6 @@
     </div>
 
     <div class="hero-inner container">
-      <!-- LEFT: Text Content -->
       <div class="hero-content">
         <div class="hero-badge animate-fade-up" data-delay="0">
           <i class="fas fa-shield-alt"></i> Trusted Since 1984 &bull; 40+ Years of Excellence
@@ -199,18 +176,17 @@
           <span class="title-faith">Faith.</span>
         </h1>
         <p class="hero-sub animate-fade-up" data-delay="250">
-          India's most reliable integrated logistics & supply chain partner. From Marathwada to Pan India, we move what matters.
+          India's most reliable integrated logistics &amp; supply chain partner. From Marathwada to Pan India, we move what matters.
         </p>
         <div class="hero-ctas animate-fade-up" data-delay="400">
           <button class="btn-primary" id="openModalHero">
             <i class="fas fa-file-alt"></i> Get Quote
           </button>
-          <a href="#contact" class="btn-secondary">
+          <a href="contact.html" class="btn-secondary">
             <i class="fas fa-phone-alt"></i> Contact Us
           </a>
         </div>
 
-        <!-- Stats Row -->
         <div class="hero-stats animate-fade-up" data-delay="550">
           <div class="stat-card">
             <div class="stat-number"><span class="counter" data-target="40">0</span>+</div>
@@ -229,17 +205,11 @@
         </div>
       </div>
 
-      <!-- RIGHT: Animated Truck Visual -->
       <div class="hero-visual animate-fade-up" data-delay="200">
         <div class="hero-visual-inner">
-
-          <!-- Glowing orbit rings -->
           <div class="visual-ring vr1"></div>
           <div class="visual-ring vr2"></div>
-
-          <!-- Road scene -->
           <div class="road-scene">
-            <!-- Top badges row -->
             <div class="badges-row">
               <div class="float-badge fb1">
                 <i class="fas fa-satellite-dish"></i>
@@ -254,10 +224,7 @@
                 <span>On-Time Delivery</span>
               </div>
             </div>
-
-            <!-- Animated truck SVG scene -->
             <div class="truck-scene">
-              <!-- Full scene: road + truck in one SVG for perfect alignment -->
               <svg class="hero-truck-svg" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="trailerGrad" x1="0" y1="0" x2="0" y2="1">
@@ -279,20 +246,9 @@
                   <filter id="truckGlow">
                     <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="rgba(0,0,0,0.6)"/>
                   </filter>
-                  <filter id="headlightGlow">
-                    <feGaussianBlur stdDeviation="3" result="blur"/>
-                    <feComposite in="SourceGraphic" in2="blur"/>
-                  </filter>
-                  <clipPath id="roadClip">
-                    <rect x="0" y="145" width="560" height="55"/>
-                  </clipPath>
                 </defs>
-
-                <!-- ===== ROAD ===== -->
                 <rect x="0" y="148" width="560" height="52" fill="url(#roadGrad)" rx="0"/>
-                <!-- Road top edge highlight -->
                 <rect x="0" y="148" width="560" height="3" fill="rgba(255,255,255,0.12)"/>
-                <!-- Road center dashes (animated via CSS) -->
                 <g class="road-dash-group">
                   <rect x="0"   y="172" width="70" height="5" rx="2.5" fill="rgba(255,107,53,0.6)"/>
                   <rect x="110" y="172" width="70" height="5" rx="2.5" fill="rgba(255,107,53,0.6)"/>
@@ -300,114 +256,59 @@
                   <rect x="330" y="172" width="70" height="5" rx="2.5" fill="rgba(255,107,53,0.6)"/>
                   <rect x="440" y="172" width="70" height="5" rx="2.5" fill="rgba(255,107,53,0.6)"/>
                 </g>
-                <!-- Road bottom edge -->
                 <rect x="0" y="196" width="560" height="4" fill="rgba(255,255,255,0.05)"/>
-
-                <!-- ===== TRUCK (bouncing via CSS) ===== -->
                 <g class="truck-body-group" filter="url(#truckGlow)">
-
-                  <!-- TRAILER -->
-                  <!-- Main trailer body -->
                   <rect x="4" y="55" width="350" height="90" rx="5" fill="url(#trailerGrad)"/>
-                  <!-- Trailer roof highlight strip -->
                   <rect x="6" y="55" width="346" height="7" rx="3" fill="rgba(255,255,255,0.07)"/>
-                  <!-- Trailer bottom orange stripe -->
                   <rect x="4" y="134" width="350" height="11" rx="0" fill="#FF6B35"/>
-                  <!-- Trailer panel rivet lines -->
                   <line x1="90"  y1="58" x2="90"  y2="143" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
                   <line x1="180" y1="58" x2="180" y2="143" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
                   <line x1="270" y1="58" x2="270" y2="143" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
-                  <!-- Trailer front coupler -->
                   <rect x="350" y="100" width="14" height="22" rx="3" fill="#2a4060"/>
-                  <!-- Trailer text -->
                   <text x="179" y="108" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.92)" font-weight="800" text-anchor="middle" letter-spacing="3">RUBY LOGISTICS</text>
                   <text x="179" y="128" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,107,53,0.8)" text-anchor="middle" letter-spacing="2.5">WE DELIVER FAITH</text>
-
-                  <!-- CAB -->
                   <rect x="362" y="30" width="168" height="115" rx="8" fill="url(#cabGrad)"/>
-                  <!-- Cab roof curve -->
                   <path d="M362 38 Q420 20 530 30 L530 38 Z" fill="rgba(255,255,255,0.06)"/>
-                  <!-- Windshield -->
                   <rect x="372" y="38" width="140" height="72" rx="6" fill="rgba(100,181,246,0.28)"/>
-                  <!-- Windshield A-pillar division -->
                   <line x1="442" y1="38" x2="442" y2="110" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-                  <!-- Windshield glare top -->
                   <rect x="374" y="40" width="60" height="5" rx="2" fill="rgba(255,255,255,0.18)"/>
-                  <!-- Cab orange bottom stripe -->
                   <rect x="362" y="134" width="168" height="11" rx="0" fill="#FF6B35"/>
-                  <!-- Cab door handle line -->
                   <line x1="400" y1="90" x2="430" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"/>
-                  <!-- Side mirror -->
                   <rect x="524" y="42" width="22" height="12" rx="3" fill="#0d3a70"/>
                   <line x1="524" y1="48" x2="535" y2="42" stroke="#0d3a70" stroke-width="3"/>
-                  <!-- Exhaust stack -->
                   <rect x="500" y="8" width="10" height="30" rx="5" fill="#3a3a3a"/>
                   <rect x="498" y="6" width="14" height="6" rx="3" fill="#444"/>
-                  <!-- Exhaust smoke -->
                   <circle class="smoke s1" cx="505" cy="5" r="6" fill="rgba(200,200,200,0.25)"/>
                   <circle class="smoke s2" cx="507" cy="-4" r="9" fill="rgba(180,180,180,0.15)"/>
                   <circle class="smoke s3" cx="503" cy="-14" r="12" fill="rgba(160,160,160,0.1)"/>
-                  <!-- Headlight housing -->
                   <rect x="527" y="88" width="6" height="18" rx="1" fill="#0d3a70"/>
-                  <!-- Headlight -->
                   <ellipse cx="532" cy="100" rx="12" ry="9" fill="#fff8e1" opacity="0.95"/>
                   <ellipse cx="532" cy="100" rx="8" ry="6" fill="#FFE57F"/>
-                  <!-- Headlight beam -->
                   <polygon points="544,92 560,82 560,118 544,108" fill="rgba(255,248,200,0.06)"/>
-                  <!-- Fog light -->
                   <ellipse cx="532" cy="118" rx="6" ry="4" fill="#fff8e1" opacity="0.5"/>
-
-                  <!-- WHEELS -->
-                  <!-- Rear trailer dual axle -->
                   <circle cx="55"  cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="55"  cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="55"  cy="148" r="5"  fill="#555"/>
-                  <line x1="55" y1="127" x2="55" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="34" y1="148" x2="76" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
                   <circle cx="100" cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="100" cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="100" cy="148" r="5"  fill="#555"/>
-                  <line x1="100" y1="127" x2="100" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="79"  y1="148" x2="121" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
-                  <!-- Mid trailer axle -->
                   <circle cx="228" cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="228" cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="228" cy="148" r="5"  fill="#555"/>
-                  <line x1="228" y1="127" x2="228" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="207" y1="148" x2="249" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
                   <circle cx="273" cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="273" cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="273" cy="148" r="5"  fill="#555"/>
-                  <line x1="273" y1="127" x2="273" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="252" y1="148" x2="294" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
-                  <!-- Cab steer axle -->
                   <circle cx="418" cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="418" cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="418" cy="148" r="5"  fill="#555"/>
-                  <line x1="418" y1="127" x2="418" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="397" y1="148" x2="439" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
-                  <!-- Cab drive axle -->
                   <circle cx="494" cy="148" r="21" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2.5"/>
                   <circle cx="494" cy="148" r="13" fill="url(#wheelHubGrad)"/>
                   <circle cx="494" cy="148" r="5"  fill="#555"/>
-                  <line x1="494" y1="127" x2="494" y2="169" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-                  <line x1="473" y1="148" x2="515" y2="148" stroke="#444" stroke-width="1.5" opacity="0.4"/>
-
-                  <!-- Ground shadow -->
                   <ellipse cx="280" cy="170" rx="270" ry="7" fill="rgba(0,0,0,0.35)"/>
                 </g>
               </svg>
-
-              <!-- Wheel dust clouds -->
               <div class="wheel-dust"></div>
             </div>
-
-            <!-- Route indicator dots -->
             <div class="route-dots">
               <span class="rdot active" title="Aurangabad HQ"></span>
               <span class="rdot" title="Pune"></span>
@@ -416,186 +317,6 @@
               <span class="rdot" title="Raipur"></span>
             </div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== ABOUT ==================== -->
-  <section id="about" class="section about-section">
-    <div class="container">
-
-      <!-- Top: section label + title -->
-      <div class="about-top" data-aos="fade-up">
-        <div class="section-tag">About Ruby Logistics</div>
-        <h2 class="section-title">Four Decades of Delivering <span class="highlight-orange">Trust</span> Across India</h2>
-      </div>
-
-      <!-- Main grid: left content + right image stack -->
-      <div class="about-grid-new">
-
-        <!-- LEFT: content column -->
-        <div class="about-left" data-aos="fade-right">
-
-          <p class="about-lead">Ruby Logistics is a trusted name in integrated logistics and supply chain solutions, a proudly <strong>family-run enterprise</strong> built on ethics, reliability, and four decades of excellence.</p>
-
-          <!-- Key milestones / timeline -->
-          <div class="about-timeline">
-            <div class="atl-item">
-              <div class="atl-year">1984</div>
-              <div class="atl-line"><span></span></div>
-              <div class="atl-text">
-                <strong>Founded by Ravinder Singh Tuteja</strong>
-                <p>Started operations in Aurangabad with a vision to build a reliable transport company in Marathwada.</p>
-              </div>
-            </div>
-            <div class="atl-item">
-              <div class="atl-year">2000s</div>
-              <div class="atl-line"><span></span></div>
-              <div class="atl-text">
-                <strong>Expansion & Corporate Partnerships</strong>
-                <p>Forged 20-year partnerships with ABInBev & United Breweries. Pan India network established.</p>
-              </div>
-            </div>
-            <div class="atl-item">
-              <div class="atl-year">Now</div>
-              <div class="atl-line"><span></span></div>
-              <div class="atl-text">
-                <strong>8+ Corporate Clients, Pan India</strong>
-                <p>Operating across Maharashtra, Chhattisgarh, Punjab, Rajasthan, Odisha & Puducherry with GPS-enabled fleet.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Vision box -->
-          <div class="about-vision">
-            <div class="vision-icon"><i class="fas fa-eye"></i></div>
-            <div>
-              <strong>Our Vision</strong>
-              <p>To become one of India's most reliable and innovative logistics partners, continuously enhancing operational excellence and delivering value-driven services.</p>
-            </div>
-          </div>
-
-          <!-- Group entities -->
-          <div class="about-entities">
-            <div class="entity-badge"><i class="fas fa-truck"></i> Ruby Traders</div>
-            <div class="entity-badge"><i class="fas fa-boxes"></i> Expert Logistic Services</div>
-            <div class="entity-badge"><i class="fas fa-building"></i> Ruby Builders & Developers</div>
-          </div>
-        </div>
-
-        <!-- RIGHT: image + floating stat cards -->
-        <div class="about-right" data-aos="fade-left">
-          <div class="about-img-stack">
-
-            <!-- Main truck photo from brochure -->
-            <div class="about-main-img">
-              <img src="images/logo_1.jpeg" alt="Ruby Logistics Fleet on highway" loading="lazy" />
-              <!-- Dark gradient overlay at bottom -->
-              <div class="about-img-overlay"></div>
-            </div>
-
-            <!-- Floating stat cards pinned to image -->
-            <div class="about-stat-card asc-tl" data-aos="zoom-in" data-aos-delay="200">
-              <div class="asc-icon"><i class="fas fa-history"></i></div>
-              <div class="asc-val">40+</div>
-              <div class="asc-label">Years Experience</div>
-            </div>
-
-            <div class="about-stat-card asc-tr" data-aos="zoom-in" data-aos-delay="350">
-              <div class="asc-icon"><i class="fas fa-users"></i></div>
-              <div class="asc-val">8+</div>
-              <div class="asc-label">Corporate Clients</div>
-            </div>
-
-            <div class="about-stat-card asc-bl" data-aos="zoom-in" data-aos-delay="500">
-              <div class="asc-icon"><i class="fas fa-map-marked-alt"></i></div>
-              <div class="asc-val">Pan</div>
-              <div class="asc-label">India Network</div>
-            </div>
-
-            <!-- Operating cities strip -->
-            <div class="about-cities-strip">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Aurangabad &bull; Pune &bull; Mumbai &bull; Jalgaon &bull; Waluj</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== SERVICES ==================== -->
-  <section id="services" class="section services-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">What We Do</div>
-        <h2 class="section-title">Our <span class="highlight-orange">Services</span></h2>
-        <p class="section-sub">Comprehensive logistics solutions tailored to your industry needs</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-shipping-fast service-icon"></i>
-          </div>
-          <h3>Freight Forwarding & Transportation</h3>
-          <p>End-to-end freight management with our robust fleet. Bulk consignments, high-volume distribution, and time-sensitive cargo handled with precision.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-file-contract service-icon"></i>
-          </div>
-          <h3>Clearing & Forwarding (C&F)</h3>
-          <p>Complete C&F agency operations ensuring smooth cargo movement with full regulatory compliance and documentation support.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-badge">Top Service</div>
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-industry service-icon"></i>
-          </div>
-          <h3>Cement Distribution</h3>
-          <p>Specialized cement logistics with capacity of <strong>50,000 MT per month</strong>. Serving Adani, Orient, Wonder, and Chettinad Cements for 25+ years.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-beer service-icon"></i>
-          </div>
-          <h3>Beer Industry Logistics</h3>
-          <p>Specialized logistics for the beer & beverage sector. Lifting capacity of <strong>10 Lac cases per month</strong> for ABInBev, United Breweries, and Carlsberg.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-network-wired service-icon"></i>
-          </div>
-          <h3>Supply Chain Management</h3>
-          <p>Integrated supply chain solutions combining route optimization, real-time tracking, and operational excellence across all touchpoints.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-icon-wrap">
-            <div class="service-icon-bg"></div>
-            <i class="fas fa-city service-icon"></i>
-          </div>
-          <h3>Real Estate Development</h3>
-          <p>Strategic real estate and land development through Ruby Builders & Developers, delivering quality projects across the Marathwada region.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -629,727 +350,66 @@
     </div>
   </section>
 
-  <!-- ==================== STRENGTHS ==================== -->
-  <section id="strengths" class="section strengths-section">
+  <!-- ==================== HOME EXPLORE GRID ==================== -->
+  <section class="section home-explore">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Our Advantage</div>
-        <h2 class="section-title">Why Choose <span class="highlight-orange">Ruby Logistics</span>?</h2>
-        <p class="section-sub">Our operational excellence is driven by experience, infrastructure, and commitment to your success</p>
+        <div class="section-tag">Explore</div>
+        <h2 class="section-title">Discover <span class="highlight-orange">Ruby Logistics</span></h2>
+        <p class="section-sub">Browse the sections below to learn more about our company, services, fleet, and reach</p>
       </div>
-
-      <div class="strengths-grid">
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="0">
-          <div class="strength-num">01</div>
-          <div class="strength-icon"><i class="fas fa-truck-loading"></i></div>
-          <h4>Robust Fleet Infrastructure</h4>
-          <p>Well-maintained scalable fleet for bulk consignments, high-volume distribution, and time-sensitive cargo.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="80">
-          <div class="strength-num">02</div>
-          <div class="strength-icon"><i class="fas fa-satellite"></i></div>
-          <h4>GPS & Tech-Enabled Operations</h4>
-          <p>Advanced GPS tracking with fuel sensors for real-time monitoring, route management, and enhanced transparency.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="160">
-          <div class="strength-num">03</div>
-          <div class="strength-icon"><i class="fas fa-clock"></i></div>
-          <h4>Timely & Reliable Deliveries</h4>
-          <p>Time commitment is central to our operations. Structured planning ensures consistent on-schedule deliveries.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="240">
-          <div class="strength-num">04</div>
-          <div class="strength-icon"><i class="fas fa-headset"></i></div>
-          <h4>Emergency Response Support</h4>
-          <p>Proactive support during urgent critical situations, ensuring uninterrupted supply chain operations.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="320">
-          <div class="strength-num">05</div>
-          <div class="strength-icon"><i class="fas fa-handshake"></i></div>
-          <h4>Transparent Operations</h4>
-          <p>Complete transparency in transactions, documentation, and communication, building long-term trust.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="strength-num">06</div>
-          <div class="strength-icon"><i class="fas fa-tools"></i></div>
-          <h4>In-House Workshop & Maintenance</h4>
-          <p>Dedicated in-house workshop with skilled mechanics and spare parts inventory to minimize downtime.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="480">
-          <div class="strength-num">07</div>
-          <div class="strength-icon"><i class="fas fa-shield-alt"></i></div>
-          <h4>Certified & Insured Fleet</h4>
-          <p>Every vehicle fully registered, certified, and covered under comprehensive insurance policies.</p>
-        </div>
-        <div class="strength-item" data-aos="fade-up" data-aos-delay="560">
-          <div class="strength-num">08</div>
-          <div class="strength-icon"><i class="fas fa-star"></i></div>
-          <h4>Customer-Centric Approach</h4>
-          <p>Tailored solutions meeting diverse client requirements across different sectors of the industry.</p>
-        </div>
+      <div class="explore-grid">
+        <a href="about.html" class="explore-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="explore-icon"><i class="fas fa-building"></i></div>
+          <h3>About Us</h3>
+          <p>Four decades of family-run excellence in logistics</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="services.html" class="explore-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="explore-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Services</h3>
+          <p>Freight, C&amp;F, cement, beverage logistics &amp; more</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="fleet.html" class="explore-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="explore-icon"><i class="fas fa-truck-moving"></i></div>
+          <h3>Our Fleet</h3>
+          <p>GPS-enabled, well-maintained, scalable for any volume</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="coverage.html" class="explore-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="explore-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Coverage</h3>
+          <p>Pan India operations across 6 major states</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="clients.html" class="explore-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="explore-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Clients</h3>
+          <p>Trusted by India's top corporates for 25+ years</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="team.html" class="explore-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="explore-icon"><i class="fas fa-users"></i></div>
+          <h3>Leadership</h3>
+          <p>Meet the Tuteja family driving Ruby Logistics</p>
+          <span class="explore-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== INDUSTRIES ==================== -->
-  <section class="section industries-section">
+  <!-- ==================== CTA STRIP ==================== -->
+  <section class="section cta-strip-section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Industries We Serve</div>
-        <h2 class="section-title">Sector-Specific <span class="highlight-orange">Expertise</span></h2>
-        <p class="section-sub">Deep domain knowledge in the industries we serve</p>
-      </div>
-
-      <div class="industries-grid">
-        <div class="industry-card" data-aos="flip-left" data-aos-delay="0">
-          <div class="industry-bg industry-cement"></div>
-          <div class="industry-content">
-            <div class="industry-icon"><i class="fas fa-industry"></i></div>
-            <h3>Cement Industry</h3>
-            <p>50,000 MT per month capacity serving top cement majors for 25+ years</p>
-            <ul class="industry-clients">
-              <li>Adani Cement (25 yrs)</li>
-              <li>Orient Cement (25 yrs)</li>
-              <li>Wonder Cement (2 yrs)</li>
-              <li>Chettinad Cements (5 yrs)</li>
-            </ul>
-          </div>
+      <div class="cta-strip" data-aos="zoom-in">
+        <div>
+          <h2>Ready to optimize your supply chain?</h2>
+          <p>Get a customized logistics solution from India's trusted partner since 1984.</p>
         </div>
-
-        <div class="industry-card" data-aos="flip-left" data-aos-delay="150">
-          <div class="industry-bg industry-beer"></div>
-          <div class="industry-content">
-            <div class="industry-icon"><i class="fas fa-beer"></i></div>
-            <h3>Beer & Beverage</h3>
-            <p>10 Lac cases/month capacity for India's leading breweries</p>
-            <ul class="industry-clients">
-              <li>ABInBev India (20 yrs)</li>
-              <li>United Breweries (20 yrs)</li>
-              <li>Carlsberg India (15 yrs)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="industry-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="industry-bg industry-drinks"></div>
-          <div class="industry-content">
-            <div class="industry-icon"><i class="fas fa-glass-cheers"></i></div>
-            <h3>Cold Drinks Distribution</h3>
-            <p>5 Lac cases/month capacity for cold drink distribution</p>
-            <ul class="industry-clients">
-              <li>Hindustan Coca-Cola (5 yrs)</li>
-              <li>Pan India Distribution</li>
-              <li>Last-mile delivery expertise</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FLEET ==================== -->
-  <section id="fleet" class="section fleet-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Our Fleet</div>
-        <h2 class="section-title">Powerful Fleet, <span class="highlight-orange">Seamless Delivery</span></h2>
-        <p class="section-sub">A well-maintained, GPS-enabled fleet with in-house workshop support</p>
-      </div>
-
-      <div class="fleet-features" data-aos="fade-up">
-        <div class="fleet-feature">
-          <i class="fas fa-satellite-dish"></i>
-          <span>GPS Enabled</span>
-        </div>
-        <div class="fleet-feature">
-          <i class="fas fa-gas-pump"></i>
-          <span>Fuel Sensors</span>
-        </div>
-        <div class="fleet-feature">
-          <i class="fas fa-tools"></i>
-          <span>In-House Workshop</span>
-        </div>
-        <div class="fleet-feature">
-          <i class="fas fa-shield-alt"></i>
-          <span>Fully Insured</span>
-        </div>
-        <div class="fleet-feature">
-          <i class="fas fa-certificate"></i>
-          <span>Certified Fleet</span>
-        </div>
-        <div class="fleet-feature">
-          <i class="fas fa-cogs"></i>
-          <span>Spare Parts Inventory</span>
-        </div>
-      </div>
-
-      <div class="fleet-gallery">
-        <div class="fleet-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="fleet-img fleet-img-1">
-            <div class="fleet-overlay">
-              <div class="fleet-tag">Flatbed Trailer</div>
-            </div>
-          </div>
-          <div class="fleet-card-info">
-            <h4>Heavy Duty Flatbed</h4>
-            <p>For cement & construction material</p>
-          </div>
-        </div>
-        <div class="fleet-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="fleet-img fleet-img-2">
-            <div class="fleet-overlay">
-              <div class="fleet-tag">Covered Carrier</div>
-            </div>
-          </div>
-          <div class="fleet-card-info">
-            <h4>Covered Box Carrier</h4>
-            <p>For beer & beverage distribution</p>
-          </div>
-        </div>
-        <div class="fleet-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="fleet-img fleet-img-3">
-            <div class="fleet-overlay">
-              <div class="fleet-tag">Fleet Yard</div>
-            </div>
-          </div>
-          <div class="fleet-card-info">
-            <h4>Multi-Truck Fleet</h4>
-            <p>Scalable for any volume requirement</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- GPS Tracking Mock -->
-      <div class="tracking-mock" data-aos="fade-up">
-        <div class="tracking-header">
-          <div class="tracking-title">
-            <i class="fas fa-satellite-dish pulse-icon"></i>
-            <span>Live Fleet Tracking Dashboard</span>
-          </div>
-          <div class="tracking-status">
-            <span class="status-dot"></span> Live
-          </div>
-        </div>
-        <div class="tracking-body">
-          <div class="track-map">
-            <div class="map-bg">
-              <!-- SVG India Map outline simplified -->
-              <svg viewBox="0 0 400 450" class="india-map-svg" xmlns="http://www.w3.org/2000/svg">
-                <path d="M120,30 L160,20 L200,25 L240,15 L280,30 L310,60 L330,90 L340,130 L350,170 L360,200 L350,240 L330,270 L310,300 L290,330 L270,360 L250,390 L230,420 L210,440 L200,445 L190,440 L180,425 L165,405 L150,380 L135,355 L115,320 L100,290 L85,260 L75,230 L70,200 L65,170 L70,140 L75,110 L85,80 L100,55 Z" fill="none" stroke="rgba(100,180,255,0.3)" stroke-width="1.5"/>
-                <!-- States highlight -->
-                <circle cx="195" cy="200" r="25" fill="rgba(255,152,0,0.15)" stroke="rgba(255,152,0,0.4)" stroke-width="1" stroke-dasharray="4,3"/>
-                <!-- Truck markers -->
-                <g class="truck-marker" transform="translate(195,170)">
-                  <circle r="8" fill="#FF6B35" opacity="0.9"/>
-                  <text y="4" text-anchor="middle" font-size="8" fill="white">🚛</text>
-                </g>
-                <g class="truck-marker" transform="translate(150,220)">
-                  <circle r="8" fill="#1a6fc4" opacity="0.9"/>
-                  <text y="4" text-anchor="middle" font-size="8" fill="white">🚛</text>
-                </g>
-                <g class="truck-marker" transform="translate(240,180)">
-                  <circle r="8" fill="#4CAF50" opacity="0.9"/>
-                  <text y="4" text-anchor="middle" font-size="8" fill="white">🚛</text>
-                </g>
-                <g class="truck-marker" transform="translate(170,280)">
-                  <circle r="8" fill="#FF6B35" opacity="0.9"/>
-                  <text y="4" text-anchor="middle" font-size="8" fill="white">🚛</text>
-                </g>
-                <g class="truck-marker" transform="translate(260,130)">
-                  <circle r="8" fill="#1a6fc4" opacity="0.9"/>
-                  <text y="4" text-anchor="middle" font-size="8" fill="white">🚛</text>
-                </g>
-                <!-- Location pins -->
-                <circle cx="195" cy="200" r="3" fill="#FF6B35"/>
-                <text x="205" y="205" font-size="9" fill="rgba(255,255,255,0.7)">Aurangabad HQ</text>
-                <!-- Route lines -->
-                <path d="M195,170 Q220,150 260,130" stroke="#4CAF50" stroke-width="1" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
-                <path d="M195,170 Q170,195 150,220" stroke="#1a6fc4" stroke-width="1" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
-              </svg>
-            </div>
-          </div>
-          <div class="track-info">
-            <div class="track-stat">
-              <span class="ts-label">Active Vehicles</span>
-              <span class="ts-value">24</span>
-            </div>
-            <div class="track-stat">
-              <span class="ts-label">In Transit</span>
-              <span class="ts-value">18</span>
-            </div>
-            <div class="track-stat">
-              <span class="ts-label">On Time %</span>
-              <span class="ts-value">97%</span>
-            </div>
-            <div class="track-stat">
-              <span class="ts-label">Routes Active</span>
-              <span class="ts-value">12</span>
-            </div>
-            <div class="track-vehicles">
-              <div class="tv-item active">
-                <span class="tv-dot"></span>
-                <span>TN 01 AB 1234 · Mumbai to Aurangabad</span>
-              </div>
-              <div class="tv-item active">
-                <span class="tv-dot"></span>
-                <span>MH 04 FP 0317 · Pune to Raipur</span>
-              </div>
-              <div class="tv-item transit">
-                <span class="tv-dot orange"></span>
-                <span>GJ 16 AY 6771 · Jaipur to Nagpur</span>
-              </div>
-              <div class="tv-item active">
-                <span class="tv-dot"></span>
-                <span>MH 20 XX 4521 · Aurangabad to Bhubaneswar</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== COVERAGE ==================== -->
-  <section id="coverage" class="section coverage-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Our Reach</div>
-        <h2 class="section-title">Coverage Across <span class="highlight-orange">India</span></h2>
-        <p class="section-sub">From the heart of Marathwada to every corner of India</p>
-      </div>
-
-      <div class="coverage-grid">
-        <div class="coverage-map-side" data-aos="fade-right">
-          <div class="india-coverage">
-            <div class="coverage-state maharashtra" data-aos="zoom-in" data-aos-delay="0">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <strong>Maharashtra</strong>
-                <span>Headquarters · Full Coverage</span>
-              </div>
-            </div>
-            <div class="coverage-state" data-aos="zoom-in" data-aos-delay="100">
-              <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Chhattisgarh</strong><span>Active Operations</span></div>
-            </div>
-            <div class="coverage-state" data-aos="zoom-in" data-aos-delay="200">
-              <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Punjab</strong><span>Active Operations</span></div>
-            </div>
-            <div class="coverage-state" data-aos="zoom-in" data-aos-delay="300">
-              <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Rajasthan</strong><span>Active Operations</span></div>
-            </div>
-            <div class="coverage-state" data-aos="zoom-in" data-aos-delay="400">
-              <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Odisha</strong><span>Active Operations</span></div>
-            </div>
-            <div class="coverage-state" data-aos="zoom-in" data-aos-delay="500">
-              <i class="fas fa-map-marker-alt"></i>
-              <div><strong>Puducherry</strong><span>Active Operations</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="coverage-hubs" data-aos="fade-left">
-          <h3>Key Operational Hubs</h3>
-          <div class="hubs-grid">
-            <div class="hub-card main-hub">
-              <div class="hub-pin"><i class="fas fa-star"></i></div>
-              <strong>Aurangabad</strong>
-              <span>Headquarters & Primary Hub</span>
-            </div>
-            <div class="hub-card">
-              <div class="hub-pin"><i class="fas fa-circle"></i></div>
-              <strong>Pune</strong>
-              <span>Western Maharashtra Hub</span>
-            </div>
-            <div class="hub-card">
-              <div class="hub-pin"><i class="fas fa-circle"></i></div>
-              <strong>Mumbai</strong>
-              <span>Commercial Capital Hub</span>
-            </div>
-            <div class="hub-card">
-              <div class="hub-pin"><i class="fas fa-circle"></i></div>
-              <strong>Jalgaon</strong>
-              <span>North Maharashtra Hub</span>
-            </div>
-            <div class="hub-card">
-              <div class="hub-pin"><i class="fas fa-circle"></i></div>
-              <strong>Waluj</strong>
-              <span>Industrial Zone Hub</span>
-            </div>
-          </div>
-
-          <div class="coverage-cta">
-            <p>Need logistics to a specific location?</p>
-            <button class="btn-primary" id="openModalCoverage">
-              <i class="fas fa-map-marked-alt"></i> Check Coverage
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CLIENTS ==================== -->
-  <section id="clients" class="section clients-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Our Clients</div>
-        <h2 class="section-title">Trusted by India's <span class="highlight-orange">Top Corporates</span></h2>
-        <p class="section-sub">Long-term partnerships built on reliability, ethics, and performance</p>
-      </div>
-
-      <div class="clients-track-wrapper" data-aos="fade-up">
-        <div class="clients-track">
-          <!-- First set -->
-          <div class="client-logo-card">
-            <div class="client-icon client-abinbev"><i class="fas fa-beer"></i></div>
-            <div class="client-name">ABInBev India</div>
-            <div class="client-years">20 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-ub"><i class="fas fa-wine-bottle"></i></div>
-            <div class="client-name">United Breweries</div>
-            <div class="client-years">20 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-carlsberg"><i class="fas fa-beer"></i></div>
-            <div class="client-name">Carlsberg India</div>
-            <div class="client-years">15 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-coca"><i class="fas fa-glass-cheers"></i></div>
-            <div class="client-name">Hindustan Coca-Cola</div>
-            <div class="client-years">5 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-adani"><i class="fas fa-industry"></i></div>
-            <div class="client-name">Adani Cement</div>
-            <div class="client-years">25 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-wonder"><i class="fas fa-building"></i></div>
-            <div class="client-name">Wonder Cement</div>
-            <div class="client-years">2 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-orient"><i class="fas fa-landmark"></i></div>
-            <div class="client-name">Orient Cement</div>
-            <div class="client-years">25 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-chett"><i class="fas fa-industry"></i></div>
-            <div class="client-name">Chettinad Cements</div>
-            <div class="client-years">5 Years</div>
-          </div>
-          <!-- Duplicate for seamless scroll -->
-          <div class="client-logo-card">
-            <div class="client-icon client-abinbev"><i class="fas fa-beer"></i></div>
-            <div class="client-name">ABInBev India</div>
-            <div class="client-years">20 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-ub"><i class="fas fa-wine-bottle"></i></div>
-            <div class="client-name">United Breweries</div>
-            <div class="client-years">20 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-carlsberg"><i class="fas fa-beer"></i></div>
-            <div class="client-name">Carlsberg India</div>
-            <div class="client-years">15 Years</div>
-          </div>
-          <div class="client-logo-card">
-            <div class="client-icon client-coca"><i class="fas fa-glass-cheers"></i></div>
-            <div class="client-name">Hindustan Coca-Cola</div>
-            <div class="client-years">5 Years</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TEAM ==================== -->
-  <section id="team" class="section team-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Leadership</div>
-        <h2 class="section-title">The <span class="highlight-orange">Tuteja Family</span> Legacy</h2>
-        <p class="section-sub">Decades of combined expertise driving Ruby Logistics forward</p>
-      </div>
-
-      <div class="team-grid">
-        <div class="team-card featured-team" data-aos="fade-up" data-aos-delay="0">
-          <div class="team-avatar">
-            <div class="avatar-initials">RST</div>
-            <div class="avatar-ring"></div>
-          </div>
-          <div class="team-badge">Founder</div>
-          <h3>Ravinder Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-award"></i> 45+ Years Experience</div>
-          <p>The visionary founder who built the foundation of Ruby Logistics. Successfully managed operations through market vehicles and established a strong reputation across Marathwada and beyond.</p>
-          <div class="team-role-tag">Strategic Advisor & Founder</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-avatar">
-            <div class="avatar-initials">RPST</div>
-          </div>
-          <h3>Ranjeet Pal Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-award"></i> 40+ Years Experience</div>
-          <p>Specialist in vehicle maintenance and workforce coordination, ensuring smooth collaboration between drivers, helpers, and support staff for operational efficiency.</p>
-          <div class="team-role-tag">Fleet Operations</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-avatar">
-            <div class="avatar-initials">GST</div>
-          </div>
-          <h3>Gurvinder Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-award"></i> 35 Years Experience</div>
-          <p>Oversees overall logistics operations ensuring efficiency and seamless day-to-day functioning. Also leads real estate and land development projects.</p>
-          <div class="team-role-tag">Operations Director</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-avatar">
-            <div class="avatar-initials">JST</div>
-          </div>
-          <h3>Jaspreet Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-award"></i> 18 Years Experience</div>
-          <p>Manages vehicle sourcing, office administration, accounts management, and implementation of modern systems for transparent business operations.</p>
-          <div class="team-role-tag">Business Administration</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-avatar">
-            <div class="avatar-initials">MPST</div>
-          </div>
-          <h3>Maninder Pal Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-award"></i> 18 Years Experience</div>
-          <p>Focuses on vehicle maintenance and operational continuity, working closely with mechanics and staff. Also supervises real estate projects daily.</p>
-          <div class="team-role-tag">Fleet & Real Estate</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-avatar">
-            <div class="avatar-initials">RVST</div>
-          </div>
-          <h3>Ravjyot Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-seedling"></i> 4 Years · Next Gen</div>
-          <p>Brings fresh energy and progressive outlook. Key role in route planning and fleet modernization, phasing out older vehicles and implementing updated technologies.</p>
-          <div class="team-role-tag">Route Planning & Innovation</div>
-        </div>
-
-        <div class="team-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="team-avatar">
-            <div class="avatar-initials">AVST</div>
-          </div>
-          <div class="team-badge green">CA</div>
-          <h3>Avjeet Singh Tuteja</h3>
-          <div class="team-exp"><i class="fas fa-chart-line"></i> Chartered Accountant</div>
-          <p>Qualified CA overseeing spare parts procurement, inventory management, and statutory compliances including Income Tax, GST, and accurate financial reporting.</p>
-          <div class="team-role-tag">Finance & Compliance</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== TESTIMONIALS ==================== -->
-  <section class="section testimonials-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Testimonials</div>
-        <h2 class="section-title">What Our <span class="highlight-orange">Clients Say</span></h2>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-          <p>"Ruby Logistics has been our cement distribution partner for over 25 years. Their reliability and commitment to timely delivery is unmatched in the Marathwada region."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">AC</div>
-            <div>
-              <strong>Operations Manager</strong>
-              <span>Adani Cement</span>
-            </div>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-          <p>"For 20 years, Ruby Logistics has handled our beer distribution with exceptional care. Their GPS tracking system gives us real-time visibility.."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">AB</div>
-            <div>
-              <strong>Supply Chain Head</strong>
-              <span>ABInBev India</span>
-            </div>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-          <p>"The transparency in operations and emergency support capability sets Ruby Logistics apart. They've never let us down in 15 years of partnership."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">CI</div>
-            <div>
-              <strong>Logistics Director</strong>
-              <span>Carlsberg India</span>
-            </div>
-            <div class="stars">★★★★★</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CONTACT ==================== -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-tag">Get In Touch</div>
-        <h2 class="section-title">Let's <span class="highlight-orange">Connect</span></h2>
-        <p class="section-sub">Ready to optimize your supply chain? Reach out to us today.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-card-info">
-            <div class="contact-detail">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <strong>Registered Address</strong>
-                <p>Gut No 652/2, Beed By Pass Road,<br>Opp Divine City, Aurangabad – 431007<br>Maharashtra, India</p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-              <div>
-                <strong>Phone Numbers</strong>
-                <p>
-                  <a href="tel:9011007264">9011007264</a> /
-                  <a href="tel:9011007263">9011007263</a>
-                </p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <strong>Email</strong>
-                <p><a href="mailto:rubylogisticsabad@gmail.com">rubylogisticsabad@gmail.com</a></p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon"><i class="fas fa-globe"></i></div>
-              <div>
-                <strong>Website</strong>
-                <p><a href="http://www.rubylogistics.in">www.rubylogistics.in</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="key-contacts">
-            <h4>Key Contact Persons</h4>
-            <div class="key-contact-list">
-              <a href="tel:9623077775" class="key-contact-item">
-                <div class="kc-avatar">RS</div>
-                <div>
-                  <strong>Ravinder Singh Tuteja</strong>
-                  <span>9623077775</span>
-                </div>
-                <i class="fas fa-phone-alt"></i>
-              </a>
-              <a href="tel:9011007271" class="key-contact-item">
-                <div class="kc-avatar">GS</div>
-                <div>
-                  <strong>Gurvinder Singh Tuteja</strong>
-                  <span>9011007271</span>
-                </div>
-                <i class="fas fa-phone-alt"></i>
-              </a>
-              <a href="tel:9921911113" class="key-contact-item">
-                <div class="kc-avatar">JS</div>
-                <div>
-                  <strong>Jaspreet Singh Tuteja</strong>
-                  <span>9921911113</span>
-                </div>
-                <i class="fas fa-phone-alt"></i>
-              </a>
-              <a href="tel:9011001110" class="key-contact-item">
-                <div class="kc-avatar">MP</div>
-                <div>
-                  <strong>Maninder Pal Singh</strong>
-                  <span>9011001110</span>
-                </div>
-                <i class="fas fa-phone-alt"></i>
-              </a>
-              <a href="tel:9890465678" class="key-contact-item">
-                <div class="kc-avatar">RJ</div>
-                <div>
-                  <strong>Ravjyot Singh Tuteja</strong>
-                  <span>9890465678</span>
-                </div>
-                <i class="fas fa-phone-alt"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-side" data-aos="fade-left">
-          <form class="contact-form" id="contactForm">
-            <h3>Send Us a Message</h3>
-            <div class="form-group">
-              <label>Full Name *</label>
-              <input type="text" placeholder="Your Full Name" required />
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Phone Number *</label>
-                <input type="tel" placeholder="+91 XXXXX XXXXX" required />
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="your@email.com" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Service Required</label>
-              <select>
-                <option value="">Select a Service</option>
-                <option>Freight Forwarding & Transportation</option>
-                <option>Clearing & Forwarding (C&F)</option>
-                <option>Cement Distribution</option>
-                <option>Beer Industry Logistics</option>
-                <option>Supply Chain Management</option>
-                <option>Real Estate Development</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Your Requirement *</label>
-              <textarea rows="4" placeholder="Tell us about your logistics requirement, volume, and route..." required></textarea>
-            </div>
-            <button type="submit" class="btn-submit-contact">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
-
-          <!-- Map Embed -->
-          <div class="map-embed">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.3!2d75.3!3d19.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUyJzEyLjAiTiA3NcKwMTgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
-              width="100%"
-              height="220"
-              style="border:0; border-radius:12px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Ruby Logistics Location - Aurangabad"
-            ></iframe>
-          </div>
+        <div class="cta-strip-actions">
+          <button class="btn-primary" id="openModalCta"><i class="fas fa-file-alt"></i> Get Quote</button>
+          <a href="contact.html" class="btn-secondary"><i class="fas fa-phone-alt"></i> Contact Us</a>
         </div>
       </div>
     </div>
@@ -1365,38 +425,38 @@
               <img src="images/logo_0.jpeg" alt="Ruby Logistics" class="footer-logo-img-real"/>
             </div>
             <p class="footer-tagline">"We Deliver Faith."</p>
-            <p class="footer-desc">Trusted integrated logistics & supply chain partner since 1984. Serving India's top corporates with reliability, ethics, and excellence.</p>
+            <p class="footer-desc">Trusted integrated logistics &amp; supply chain partner since 1984. Serving India's top corporates with reliability, ethics, and excellence.</p>
             <div class="footer-social">
               <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
               <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://wa.me/919011007264" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
 
           <div class="footer-links-col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#strengths">Why Choose Us</a></li>
-              <li><a href="#fleet">Our Fleet</a></li>
-              <li><a href="#coverage">Coverage</a></li>
-              <li><a href="#clients">Clients</a></li>
-              <li><a href="#team">Leadership</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="fleet.html">Our Fleet</a></li>
+              <li><a href="coverage.html">Coverage</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="team.html">Leadership</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
           <div class="footer-links-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">Freight Forwarding</a></li>
-              <li><a href="#services">C&F Agency</a></li>
-              <li><a href="#services">Cement Distribution</a></li>
-              <li><a href="#services">Beer Industry Logistics</a></li>
-              <li><a href="#services">Supply Chain Mgmt</a></li>
-              <li><a href="#services">Real Estate</a></li>
+              <li><a href="services.html#freight">Freight Forwarding</a></li>
+              <li><a href="services.html#cf">C&amp;F Agency</a></li>
+              <li><a href="services.html#cement">Cement Distribution</a></li>
+              <li><a href="services.html#beer">Beer Industry Logistics</a></li>
+              <li><a href="services.html#scm">Supply Chain Mgmt</a></li>
+              <li><a href="services.html#realestate">Real Estate</a></li>
             </ul>
           </div>
 
@@ -1405,11 +465,11 @@
             <p><i class="fas fa-map-marker-alt"></i> Beed By Pass Road, Aurangabad, Maharashtra 431007</p>
             <p><i class="fas fa-phone-alt"></i> <a href="tel:9011007264">9011007264</a></p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:rubylogisticsabad@gmail.com">rubylogisticsabad@gmail.com</a></p>
-            <p><i class="fas fa-globe"></i> <a href="http://www.rubylogistics.in">www.rubylogistics.in</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://ruby-logistics-transport-prnt.vercel.app/" target="_blank" rel="noopener">rubylogistics</a></p>
             <div class="footer-entities">
               <span>Ruby Traders</span>
               <span>Expert Logistic Services</span>
-              <span>Ruby Builders & Developers</span>
+              <span>Ruby Builders &amp; Developers</span>
             </div>
           </div>
         </div>
@@ -1428,7 +488,6 @@
     <span class="wa-tooltip">Chat with us!</span>
   </a>
 
-  <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-chevron-up"></i>
   </button>

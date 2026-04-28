@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Tuteja family — three generations of leadership driving Ruby Logistics. Meet the founders and operations team." />
+  <title>Leadership | Ruby Logistics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="team">
+
+  <div id="quoteModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Request a Quote">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-file-invoice"></i></div>
+        <h3>Request a Quote</h3>
+        <p>Get a customized logistics solution in 24 hours</p>
+      </div>
+      <form class="modal-form" id="quoteForm">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your Name" required /></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required /></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+        <div class="form-group"><label>Service Required *</label>
+          <select required>
+            <option value="">Select Service</option>
+            <option>Freight Forwarding &amp; Transportation</option>
+            <option>Clearing &amp; Forwarding (C&amp;F)</option>
+            <option>Cement Distribution</option>
+            <option>Beer Industry Logistics</option>
+            <option>Supply Chain Management</option>
+            <option>Real Estate Development</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Your Requirement</label><textarea placeholder="Describe your logistics requirement..." rows="3"></textarea></div>
+        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <nav id="navbar" class="navbar-solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo_0.jpeg" alt="Ruby Logistics" class="nav-logo-img-real"/></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="nav-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="nav-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="nav-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="nav-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-quote-nav" id="openModalNav">Get Quote</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul>
+        <li><a href="index.html" class="mob-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="mob-link" data-page="about">About</a></li>
+        <li><a href="services.html" class="mob-link" data-page="services">Services</a></li>
+        <li><a href="fleet.html" class="mob-link" data-page="fleet">Fleet</a></li>
+        <li><a href="coverage.html" class="mob-link" data-page="coverage">Coverage</a></li>
+        <li><a href="clients.html" class="mob-link" data-page="clients">Clients</a></li>
+        <li><a href="team.html" class="mob-link" data-page="team">Team</a></li>
+        <li><a href="contact.html" class="mob-link" data-page="contact">Contact</a></li>
+      </ul>
+      <button class="btn-quote-mob" id="openModalMob">Get a Quote</button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="page-crumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> Leadership</p>
+      <h1>The <span class="highlight-orange">Tuteja Family</span> Legacy</h1>
+      <p>Decades of combined expertise driving Ruby Logistics forward.</p>
+    </div>
+  </section>
+
+  <section id="team" class="section team-section">
+    <div class="container">
+      <div class="team-grid">
+        <div class="team-card featured-team" data-aos="fade-up" data-aos-delay="0">
+          <div class="team-avatar"><div class="avatar-initials">RST</div><div class="avatar-ring"></div></div>
+          <div class="team-badge">Founder</div>
+          <h3>Ravinder Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-award"></i> 45+ Years Experience</div>
+          <p>The visionary founder who built the foundation of Ruby Logistics. Successfully managed operations through market vehicles and established a strong reputation across Marathwada and beyond.</p>
+          <div class="team-role-tag">Strategic Advisor &amp; Founder</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-avatar"><div class="avatar-initials">RPST</div></div>
+          <h3>Ranjeet Pal Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-award"></i> 40+ Years Experience</div>
+          <p>Specialist in vehicle maintenance and workforce coordination, ensuring smooth collaboration between drivers, helpers, and support staff for operational efficiency.</p>
+          <div class="team-role-tag">Fleet Operations</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-avatar"><div class="avatar-initials">GST</div></div>
+          <h3>Gurvinder Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-award"></i> 35 Years Experience</div>
+          <p>Oversees overall logistics operations ensuring efficiency and seamless day-to-day functioning. Also leads real estate and land development projects.</p>
+          <div class="team-role-tag">Operations Director</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-avatar"><div class="avatar-initials">JST</div></div>
+          <h3>Jaspreet Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-award"></i> 18 Years Experience</div>
+          <p>Manages vehicle sourcing, office administration, accounts management, and implementation of modern systems for transparent business operations.</p>
+          <div class="team-role-tag">Business Administration</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-avatar"><div class="avatar-initials">MPST</div></div>
+          <h3>Maninder Pal Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-award"></i> 18 Years Experience</div>
+          <p>Focuses on vehicle maintenance and operational continuity, working closely with mechanics and staff. Also supervises real estate projects daily.</p>
+          <div class="team-role-tag">Fleet &amp; Real Estate</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="team-avatar"><div class="avatar-initials">RVST</div></div>
+          <h3>Ravjyot Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-seedling"></i> 4 Years · Next Gen</div>
+          <p>Brings fresh energy and progressive outlook. Key role in route planning and fleet modernization, phasing out older vehicles and implementing updated technologies.</p>
+          <div class="team-role-tag">Route Planning &amp; Innovation</div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="team-avatar"><div class="avatar-initials">AVST</div></div>
+          <div class="team-badge green">CA</div>
+          <h3>Avjeet Singh Tuteja</h3>
+          <div class="team-exp"><i class="fas fa-chart-line"></i> Chartered Accountant</div>
+          <p>Qualified CA overseeing spare parts procurement, inventory management, and statutory compliances including Income Tax, GST, and accurate financial reporting.</p>
+          <div class="team-role-tag">Finance &amp; Compliance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo"><img src="images/logo_0.jpeg" alt="Ruby Logistics" class="footer-logo-img-real"/></div>
+            <p class="footer-tagline">"We Deliver Faith."</p>
+            <p class="footer-desc">Trusted integrated logistics &amp; supply chain partner since 1984. Serving India's top corporates with reliability, ethics, and excellence.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://wa.me/919011007264" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-links-col"><h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="fleet.html">Our Fleet</a></li>
+              <li><a href="coverage.html">Coverage</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="team.html">Leadership</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col"><h4>Services</h4>
+            <ul>
+              <li><a href="services.html#freight">Freight Forwarding</a></li>
+              <li><a href="services.html#cf">C&amp;F Agency</a></li>
+              <li><a href="services.html#cement">Cement Distribution</a></li>
+              <li><a href="services.html#beer">Beer Industry Logistics</a></li>
+              <li><a href="services.html#scm">Supply Chain Mgmt</a></li>
+              <li><a href="services.html#realestate">Real Estate</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col"><h4>Contact</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Beed By Pass Road, Aurangabad, Maharashtra 431007</p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:9011007264">9011007264</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:rubylogisticsabad@gmail.com">rubylogisticsabad@gmail.com</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://ruby-logistics-transport-prnt.vercel.app/" target="_blank" rel="noopener">rubylogistics</a></p>
+            <div class="footer-entities">
+              <span>Ruby Traders</span>
+              <span>Expert Logistic Services</span>
+              <span>Ruby Builders &amp; Developers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>&copy; 2026 Ruby Logistics. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Excellence</p></div></div>
+  </footer>
+
+  <a href="https://wa.me/919011007264?text=Hello%20Ruby%20Logistics%2C%20I%20need%20logistics%20services." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us!</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
