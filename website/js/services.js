@@ -83,16 +83,14 @@
     return t.value;
   };
 
-  const modal = document.getElementById('serviceModal');
-  const closeBtn = document.getElementById('closeServiceModal');
-  const titleEl = document.getElementById('serviceModalTitle');
-  const subEl = document.getElementById('serviceModalSub');
-  const bodyEl = document.getElementById('serviceModalBody');
-  const quoteBtn = document.getElementById('serviceModalQuote');
-  const quoteModal = document.getElementById('quoteModal');
+  const $ = (id) => document.getElementById(id);
 
   function openServiceModal(serviceKey) {
-    if (!modal) return;
+    const modal = $('serviceModal');
+    const titleEl = $('serviceModalTitle');
+    const subEl = $('serviceModalSub');
+    const bodyEl = $('serviceModalBody');
+    if (!modal || !titleEl || !subEl || !bodyEl) return;
     const data = SERVICE_DETAILS[serviceKey];
     if (!data) return;
     titleEl.textContent = serviceKey;
@@ -109,35 +107,41 @@
   }
 
   function closeServiceModal() {
+    const modal = $('serviceModal');
     if (!modal) return;
     modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('.service-cta').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const key = decode(btn.dataset.service || '');
-      openServiceModal(key);
-    });
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.service-cta');
+    if (!btn) return;
+    e.preventDefault();
+    const key = decode(btn.dataset.service || '');
+    openServiceModal(key);
   });
 
-  if (closeBtn) closeBtn.addEventListener('click', closeServiceModal);
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeServiceModal();
-    });
-  }
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeServiceModal();
-  });
-
-  if (quoteBtn) {
-    quoteBtn.addEventListener('click', () => {
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('#closeServiceModal')) {
       closeServiceModal();
+      return;
+    }
+    const modal = $('serviceModal');
+    if (modal && e.target === modal) {
+      closeServiceModal();
+      return;
+    }
+    if (e.target.closest('#serviceModalQuote')) {
+      closeServiceModal();
+      const quoteModal = $('quoteModal');
       if (quoteModal) {
         quoteModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
-    });
-  }
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeServiceModal();
+  });
 })();
